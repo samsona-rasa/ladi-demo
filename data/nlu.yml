@@ -1,48 +1,47 @@
 version: "3.1"
 
 nlu:
-- intent: greet
-  examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
 
-- intent: ask_meal
-  examples: |
-    - what can i eat
-    - I am hungry
-    - I want to eat
-    - surprise me
-    - eat
-    - i want [breakfast](meal_type)
+  - intent: ask_meal
+    examples: |
+      - I want a [hot](meal_temp) [breakfast](meal_type)
+      - I want a [cold](meal_temp) [breakfast](meal_type)
+      - I want a [hot](meal_temp) [lunch](meal_type)
+      - I want a [cold](meal_temp) [lunch](meal_type)
+      - I want a [hot](meal_temp) [dinner](meal_type)
+      - I want a [cold](meal_temp) [dinner](meal_type)
 
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
 
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
-
-- intent: goodbye
-  examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+  - intent: goodbye
+    examples: |
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later

@@ -6,12 +6,51 @@ stories:
       - intent: greet
       - action: utter_greet
 
-  - story: breakfast path
+  # - story: breakfast path
+  #   steps:
+  #     - intent: ask_meal
+  #     - slot_was_set:
+  #         - meal_type: breakfast
+  #     - action: utter_breakfast
+
+  - story: hot breakfast path
     steps:
       - intent: ask_meal
       - slot_was_set:
           - meal_type: breakfast
-      - action: utter_breakfast
-#breakfast path
-#lunch path
-#dinner path
+      - action: utter_hot_breakfast
+
+  - story: cold breakfast path
+    steps:
+      - intent: ask_meal
+      - slot_was_set:
+          - meal_type: breakfast
+      - action: utter_cold_breakfast
+
+  - story: hot lunch path
+    steps:
+      - intent: ask_meal
+      - slot_was_set:
+          - meal_type: lunch
+      - action: utter_hot_lunch
+
+  - story: cold lunch path
+    steps:
+      - intent: ask_meal
+      - slot_was_set:
+          - meal_type: lunch
+      - action: utter_cold_lunch
+
+  - story: hot dinner path
+    steps:
+      - intent: ask_meal
+      - slot_was_set:
+          - meal_type: dinner
+      - action: utter_hot_dinner
+
+  - story: cold dinner path
+    steps:
+      - intent: ask_meal
+      - slot_was_set:
+          - meal_type: dinner
+      - action: utter_cold_dinner
