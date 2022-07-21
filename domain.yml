@@ -5,6 +5,7 @@ intents:
   - ask_meal
   - bot_challenge
   - goodbye
+  - inform
 
 entities:
   - meal_type
@@ -54,6 +55,14 @@ responses:
   utter_ask_hot_or_cold:
     - text: "Do you prefer hot or cold?"
 
+  # utter_ask_{form}_{slot}
+  # Question to ask when an info is missing.
+  utter_ask_meal_form_meal_type:
+    - text: "Breakfast, Lunch or Dinner?"
+
+  utter_ask_meal_form_meal_temp:
+    - text: "Do you want it Hot or Cold?"
+
   utter_cheer_up:
     - text: "Here is something to cheer you up:"
       image: "https://i.imgur.com/nGF1K8f.jpg"
@@ -61,14 +70,17 @@ responses:
   utter_did_that_help:
     - text: "Did that help you?"
 
-  utter_happy:
-    - text: "Great, carry on!"
-
   utter_goodbye:
     - text: "Bye"
 
   utter_iamabot:
     - text: "I am a bot, powered by Rasa."
+
+forms:
+  meal_form:
+    required_slots:
+      - meal_type
+      - meal_temp
 
 session_config:
   session_expiration_time: 60

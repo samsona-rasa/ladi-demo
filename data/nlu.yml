@@ -26,6 +26,14 @@ nlu:
       - I want a [hot](meal_temp) [dinner](meal_type)
       - I want a [cold](meal_temp) [dinner](meal_type)
 
+  - intent: inform
+    examples: |
+      - [[hot](meal_temp)
+      - [cold](meal_temp)
+      - [breakfast](meal_type)
+      - [lunch](meal_type)
+      - [dinner](meal_type)
+
   - intent: bot_challenge
     examples: |
       - are you a bot?

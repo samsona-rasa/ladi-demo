@@ -6,51 +6,52 @@ stories:
       - intent: greet
       - action: utter_greet
 
-  # - story: breakfast path
+  - story: hot breakfast path
+    steps:
+      - intent: ask_meal
+      - action: meal_form
+      - active_loop: meal_form
+  #     - slot_was_set:
+  #         - meal_type: breakfast
+  #         - meal_temp: hot
+  #     - action: utter_hot_breakfast
+
+  # - story: cold breakfast path
   #   steps:
   #     - intent: ask_meal
   #     - slot_was_set:
   #         - meal_type: breakfast
-  #     - action: utter_breakfast
+  #         - meal_temp: cold
+  #     - action: utter_cold_breakfast
 
-  - story: hot breakfast path
-    steps:
-      - intent: ask_meal
-      - slot_was_set:
-          - meal_type: breakfast
-      - action: utter_hot_breakfast
+  # - story: hot lunch path
+  #   steps:
+  #     - intent: ask_meal
+  #     - slot_was_set:
+  #         - meal_type: lunch
+  #         - meal_temp: hot
+  #     - action: utter_hot_lunch
 
-  - story: cold breakfast path
-    steps:
-      - intent: ask_meal
-      - slot_was_set:
-          - meal_type: breakfast
-      - action: utter_cold_breakfast
+  # - story: cold lunch path
+  #   steps:
+  #     - intent: ask_meal
+  #     - slot_was_set:
+  #         - meal_type: lunch
+  #         - meal_temp: cold
+  #     - action: utter_cold_lunch
 
-  - story: hot lunch path
-    steps:
-      - intent: ask_meal
-      - slot_was_set:
-          - meal_type: lunch
-      - action: utter_hot_lunch
+  # - story: hot dinner path
+  #   steps:
+  #     - intent: ask_meal
+  #     - slot_was_set:
+  #         - meal_type: dinner
+  #         - meal_temp: hot
+  #     - action: utter_hot_dinner
 
-  - story: cold lunch path
-    steps:
-      - intent: ask_meal
-      - slot_was_set:
-          - meal_type: lunch
-      - action: utter_cold_lunch
-
-  - story: hot dinner path
-    steps:
-      - intent: ask_meal
-      - slot_was_set:
-          - meal_type: dinner
-      - action: utter_hot_dinner
-
-  - story: cold dinner path
-    steps:
-      - intent: ask_meal
-      - slot_was_set:
-          - meal_type: dinner
-      - action: utter_cold_dinner
+  # - story: cold dinner path
+  #   steps:
+  #     - intent: ask_meal
+  #     - slot_was_set:
+  #         - meal_type: dinner
+  #         - meal_temp: cold
+  #     - action: utter_cold_dinner
