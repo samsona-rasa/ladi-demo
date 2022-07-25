@@ -1,0 +1,28 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-meal_temp",
+      "2": "I-meal_temp",
+      "3": "L-meal_temp",
+      "4": "U-meal_temp",
+      "5": "B-meal_type",
+      "6": "I-meal_type",
+      "7": "L-meal_type",
+      "8": "U-meal_type",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-meal_temp": 1,
+      "I-meal_temp": 2,
+      "L-meal_temp": 3,
+      "U-meal_temp": 4,
+      "B-meal_type": 5,
+      "I-meal_type": 6,
+      "L-meal_type": 7,
+      "U-meal_type": 8,
+      "O": 0
+    },
+    "num_tags": 9
+  }
+]

@@ -1,1 +1,7 @@
 - fix: how it responds when input doesnt match and examples. {look @ forms}
+
+- look at videos and se what can be implemented.
+    - entity synonym mapper (future impl.)
+
+- include a readme for this bot. 
+    ref: https://github.com/RasaHQ/how-much-is-the-fish

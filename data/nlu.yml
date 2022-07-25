@@ -28,7 +28,7 @@ nlu:
 
   - intent: inform
     examples: |
-      - [[hot](meal_temp)
+      - [hot](meal_temp)
       - [cold](meal_temp)
       - [breakfast](meal_type)
       - [lunch](meal_type)
