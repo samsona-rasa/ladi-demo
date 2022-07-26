@@ -42,7 +42,7 @@ responses:
         - type: slot
           name: meal_temp
           value: hot
-      text: Fried eggs avacados, with French Toast.
+      text: Fried eggs, Avacados, with French Toast.
     - condition:
         - type: slot
           name: meal_type
@@ -58,7 +58,7 @@ responses:
         - type: slot
           name: meal_temp
           value: hot
-      text: Hot Lunch.
+      text: Vegetable Ramen with Shiitake mushrooms, corn & boiled egg.
     - condition:
         - type: slot
           name: meal_type
@@ -66,7 +66,7 @@ responses:
         - type: slot
           name: meal_temp
           value: cold
-      text: Cold Lunch.
+      text: Veggie sandwich with cream cheese spread, tomatoes, chai seeds & avacoados.
     - condition:
         - type: slot
           name: meal_type
@@ -74,7 +74,7 @@ responses:
         - type: slot
           name: meal_temp
           value: hot
-      text: Hot Dinner.
+      text: Lobster cream soup.
     - condition:
         - type: slot
           name: meal_type
@@ -82,7 +82,7 @@ responses:
         - type: slot
           name: meal_temp
           value: cold
-      text: Cold Dinner.
+      text: Italian tuna and bean salad with pistachio.
     - text: "Are you hungry?"
 
 
