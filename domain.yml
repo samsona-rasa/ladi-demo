@@ -42,7 +42,7 @@ responses:
         - type: slot
           name: meal_temp
           value: hot
-      text: Fried eggs avacados, with french toast
+      text: Fried eggs avacados, with French Toast.
     - condition:
         - type: slot
           name: meal_type
@@ -57,21 +57,34 @@ responses:
           value: lunch
         - type: slot
           name: meal_temp
+          value: hot
+      text: Hot Lunch.
+    - condition:
+        - type: slot
+          name: meal_type
+          value: lunch
+        - type: slot
+          name: meal_temp
           value: cold
-      text: Mushroom Kale Salad.
+      text: Cold Lunch.
+    - condition:
+        - type: slot
+          name: meal_type
+          value: dinner
+        - type: slot
+          name: meal_temp
+          value: hot
+      text: Hot Dinner.
+    - condition:
+        - type: slot
+          name: meal_type
+          value: dinner
+        - type: slot
+          name: meal_temp
+          value: cold
+      text: Cold Dinner.
     - text: "Are you hungry?"
 
-  utter_hot_lunch:
-    - text: Hot lunch
-
-  utter_cold_lunch:
-    - text: Cold Lunch
-
-  utter_hot_dinner:
-    - text: Hot Dinner
-
-  utter_cold_dinner:
-    - text: Cold Dinner
 
   utter_ask_hot_or_cold:
     - text: "Do you prefer hot or cold?"
@@ -84,10 +97,6 @@ responses:
 
   utter_ask_meal_form_meal_temp:
     - text: "Do you want it Hot or Cold?"
-
-  utter_cheer_up:
-    - text: "Here is something to cheer you up:"
-      image: "https://i.imgur.com/nGF1K8f.jpg"
 
   utter_did_that_help:
     - text: "Did that help you?"
